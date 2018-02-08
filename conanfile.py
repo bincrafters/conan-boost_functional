@@ -11,11 +11,11 @@ class BoostFunctionalConan(ConanFile):
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
     lib_short_names = ["functional"]
+    level_group = "boost_level5group"
     is_header_only = True
 
     def package_id_additional(self):
         self.info.header_only()
-    is_in_cycle_group = True
 
     requires = (
         "boost_package_tools/1.66.0@bincrafters/testing",
